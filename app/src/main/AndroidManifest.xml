@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tmdb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity
+            android:name="com.example.tmdb.TMDBmainactivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tmdb.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tmdb.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.tmdb.ContactUsActivity"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name="com.example.tmdb.Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.example.tmdb.List_movies"
+            android:label="@string/title_activity_list_movies" >
+        </activity>
+        <activity
+            android:name="com.example.tmdb.SearchbarActivity"
+            android:label="@string/title_activity_searchbar" >
+        </activity>
+        <activity
+            android:name="com.example.tmdb.ResultActivity"
+            android:label="@string/title_activity_result" >
+        </activity>
+    </application>
+
+</manifest>
